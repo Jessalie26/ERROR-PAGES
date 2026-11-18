@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="404 Page Not Found">
+    <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect width="32" height="32" rx="8" fill="url(#gradient1)"/>
+                    <path d="M16 8L24 16L16 24L8 16L16 8Z" fill="white" opacity="0.9"/>
+                    <defs>
+                        <linearGradient id="gradient1" x1="0" y1="0" x2="32" y2="32">
+                            <stop offset="0%" stop-color="#667eea"/>
+                            <stop offset="100%" stop-color="#764ba2"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>ErrorPages</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="404.html" class="active">404 Page</a></li>
+                <li><a href="503.html">503 Page</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="error-page">
+        <div class="container">
+            <div class="error-content">
+                <div class="error-code" aria-label="Error code 404">
+                    <span class="number-4">4</span>
+                    <span class="number-0">0</span>
+                    <span class="number-4-2">4</span>
+                </div>
+                
+                <div class="error-illustration" role="img" aria-label="Lost astronaut floating in space">
+                    <svg viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Stars -->
+                        <circle cx="100" cy="80" r="2" fill="#667eea" opacity="0.6" class="star"/>
+                        <circle cx="500" cy="100" r="2" fill="#764ba2" opacity="0.6" class="star"/>
+                        <circle cx="450" cy="50" r="1.5" fill="#f093fb" opacity="0.6" class="star"/>
+                        <circle cx="150" cy="300" r="2" fill="#667eea" opacity="0.6" class="star"/>
+                        <circle cx="550" cy="280" r="1.5" fill="#764ba2" opacity="0.6" class="star"/>
+                        <circle cx="80" cy="200" r="1.5" fill="#f093fb" opacity="0.6" class="star"/>
+                        
+                        <!-- Planet in background -->
+                        <circle cx="480" cy="320" r="60" fill="url(#planetGradient)" opacity="0.3"/>
+                        <ellipse cx="480" cy="320" rx="80" ry="8" fill="none" stroke="url(#ringGradient)" stroke-width="3" opacity="0.3"/>
+                        
+                        <!-- Astronaut -->
+                        <g class="astronaut">
+                            <!-- Helmet -->
+                            <ellipse cx="300" cy="180" rx="45" ry="48" fill="url(#helmetGradient)"/>
+                            <ellipse cx="300" cy="180" rx="38" ry="40" fill="#e8f4f8"/>
+                            <ellipse cx="300" cy="185" rx="28" ry="30" fill="url(#faceGradient)"/>
+                            
+                            <!-- Reflection on helmet -->
+                            <ellipse cx="285" cy="165" rx="12" ry="15" fill="white" opacity="0.4"/>
+                            
+                            <!-- Body -->
+                            <ellipse cx="300" cy="260" rx="50" ry="60" fill="url(#bodyGradient)"/>
+                            
+                            <!-- Arms -->
+                            <ellipse cx="250" cy="240" rx="18" ry="45" fill="url(#bodyGradient)" transform="rotate(-30 250 240)"/>
+                            <ellipse cx="350" cy="240" rx="18" ry="45" fill="url(#bodyGradient)" transform="rotate(30 350 240)"/>
+                            
+                            <!-- Gloves -->
+                            <circle cx="240" cy="275" r="15" fill="#667eea"/>
+                            <circle cx="360" cy="275" r="15" fill="#667eea"/>
+                            
+                            <!-- Legs -->
+                            <ellipse cx="280" cy="330" rx="16" ry="40" fill="url(#bodyGradient)"/>
+                            <ellipse cx="320" cy="330" rx="16" ry="40" fill="url(#bodyGradient)"/>
+                            
+                            <!-- Boots -->
+                            <ellipse cx="280" cy="370" rx="20" ry="12" fill="#764ba2"/>
+                            <ellipse cx="320" cy="370" rx="20" ry="12" fill="#764ba2"/>
+                            
+                            <!-- Backpack -->
+                            <rect x="290" y="235" width="20" height="35" rx="5" fill="#764ba2" opacity="0.8"/>
+                            <circle cx="295" cy="245" r="3" fill="#f093fb"/>
+                            <circle cx="305" cy="245" r="3" fill="#f093fb"/>
+                            
+                            <!-- Control panel on chest -->
+                            <rect x="285" y="250" width="30" height="20" rx="3" fill="#2d3748" opacity="0.6"/>
+                            <circle cx="293" cy="260" r="2" fill="#48bb78"/>
+                            <circle cx="300" cy="260" r="2" fill="#ed8936"/>
+                            <circle cx="307" cy="260" r="2" fill="#4299e1"/>
+                        </g>
+                        
+                        <!-- Floating elements -->
+                        <circle cx="150" cy="150" r="8" fill="#f093fb" opacity="0.4" class="float-1"/>
+                        <circle cx="450" cy="200" r="6" fill="#667eea" opacity="0.4" class="float-2"/>
+                        <rect x="420" y="130" width="12" height="12" fill="#764ba2" opacity="0.4" class="float-3" transform="rotate(45 426 136)"/>
+                        
+                        <defs>
+                            <linearGradient id="helmetGradient" x1="300" y1="132" x2="300" y2="228">
+                                <stop offset="0%" stop-color="#667eea"/>
+                                <stop offset="100%" stop-color="#764ba2"/>
+                            </linearGradient>
+                            <linearGradient id="bodyGradient" x1="300" y1="200" x2="300" y2="320">
+                                <stop offset="0%" stop-color="#e0e7ff"/>
+                                <stop offset="100%" stop-color="#c7d2fe"/>
+                            </linearGradient>
+                            <radialGradient id="faceGradient">
+                                <stop offset="0%" stop-color="#fbd38d"/>
+                                <stop offset="100%" stop-color="#f6ad55"/>
+                            </radialGradient>
+                            <linearGradient id="planetGradient" x1="420" y1="260" x2="540" y2="380">
+                                <stop offset="0%" stop-color="#667eea"/>
+                                <stop offset="100%" stop-color="#764ba2"/>
+                            </linearGradient>
+                            <linearGradient id="ringGradient" x1="400" y1="320" x2="560" y2="320">
+                                <stop offset="0%" stop-color="#667eea"/>
+                                <stop offset="100%" stop-color="#764ba2"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                
+                <h1 class="error-title">Oops! Page Not Found</h1>
+                <p class="error-description">
+                    We can't seem to find the page you're looking for. It might have been moved, deleted, or perhaps it never existed. Don't worry, even astronauts get lost sometimes!
+                </p>
+                
+                <div class="search-container">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <input 
+                        type="search" 
+                        class="search-input" 
+                        placeholder="Search for what you need..."
+                        aria-label="Search for content"
+                    >
+                    <button class="search-button" aria-label="Submit search">Search</button>
+                </div>
+                
+                <div class="error-actions">
+                    <a href="index.html" class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M3 10L10 3L17 10M4 9V16C4 16.5523 4.44772 17 5 17H8V13C8 12.4477 8.44772 12 9 12H11C11.5523 12 12 12.4477 12 13V17H15C15.5523 17 16 16.5523 16 16V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Go to Homepage
+                    </a>
+                    <button class="btn btn-secondary" onclick="window.history.back()" aria-label="Go back to previous page">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 17L3 10L10 3M3 10H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Go Back
+                    </button>
+                </div>
+                
+                <div class="helpful-links">
+                    <h3>Helpful Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="503.html">Service Status</a></li>
+                        <li><a href="index.html#contact">Contact Support</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 ErrorPages. Built with care and attention to detail.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="503 Service Unavailable">
+    <title>503 - We'll Be Back Soon!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect width="32" height="32" rx="8" fill="url(#gradient1)"/>
+                    <path d="M16 8L24 16L16 24L8 16L16 8Z" fill="white" opacity="0.9"/>
+                    <defs>
+                        <linearGradient id="gradient1" x1="0" y1="0" x2="32" y2="32">
+                            <stop offset="0%" stop-color="#667eea"/>
+                            <stop offset="100%" stop-color="#764ba2"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>ErrorPages</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="404.html">404 Page</a></li>
+                <li><a href="503.html" class="active">503 Page</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="error-page">
+        <div class="container">
+            <div class="error-content">
+                <div class="error-code error-code-503" aria-label="Error code 503">
+                    <span class="number-5">5</span>
+                    <span class="number-0-503">0</span>
+                    <span class="number-3">3</span>
+                </div>
+                
+                <div class="error-illustration" role="img" aria-label="Robot performing maintenance">
+                    <svg viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Background gears -->
+                        <g opacity="0.1">
+                            <circle cx="120" cy="100" r="40" stroke="#667eea" stroke-width="3"/>
+                            <path d="M120 60L120 140M80 100L160 100" stroke="#667eea" stroke-width="3"/>
+                            
+                            <circle cx="500" cy="320" r="35" stroke="#764ba2" stroke-width="3"/>
+                            <path d="M500 285L500 355M465 320L535 320" stroke="#764ba2" stroke-width="3"/>
+                        </g>
+                        
+                        <!-- Tool box -->
+                        <rect x="150" y="310" width="100" height="60" rx="5" fill="url(#toolboxGradient)"/>
+                        <rect x="150" y="310" width="100" height="15" fill="#764ba2"/>
+                        <circle cx="200" cy="317" r="4" fill="#f093fb"/>
+                        <rect x="180" y="305" width="40" height="8" rx="4" fill="#4a5568"/>
+                        
+                        <!-- Tools in box -->
+                        <line x1="170" y1="340" x2="170" y2="360" stroke="#cbd5e0" stroke-width="3"/>
+                        <line x1="190" y1="340" x2="190" y2="360" stroke="#cbd5e0" stroke-width="3"/>
+                        <rect x="210" y="340" width="20" height="25" fill="#cbd5e0"/>
+                        
+                        <!-- Main Robot -->
+                        <g class="robot">
+                            <!-- Robot body -->
+                            <rect x="260" y="200" width="120" height="140" rx="15" fill="url(#robotBodyGradient)"/>
+                            
+                            <!-- Body details -->
+                            <rect x="275" y="220" width="90" height="60" rx="8" fill="#2d3748" opacity="0.3"/>
+                            <circle cx="295" cy="245" r="8" fill="#48bb78" class="pulse"/>
+                            <circle cx="320" cy="245" r="8" fill="#ed8936" class="pulse" style="animation-delay: 0.3s"/>
+                            <circle cx="345" cy="245" r="8" fill="#4299e1" class="pulse" style="animation-delay: 0.6s"/>
+                            
+                            <!-- Display lines -->
+                            <line x1="280" y1="265" x2="350" y2="265" stroke="#667eea" stroke-width="2" opacity="0.6"/>
+                            <line x1="280" y1="273" x2="330" y2="273" stroke="#667eea" stroke-width="2" opacity="0.6"/>
+                            
+                            <!-- Robot head -->
+                            <rect x="275" y="140" width="90" height="70" rx="12" fill="url(#robotHeadGradient)"/>
+                            
+                            <!-- Antenna -->
+                            <line x1="320" y1="140" x2="320" y2="110" stroke="#764ba2" stroke-width="4"/>
+                            <circle cx="320" cy="105" r="8" fill="#f093fb" class="pulse"/>
+                            
+                            <!-- Eyes -->
+                            <circle cx="295" cy="170" r="12" fill="white"/>
+                            <circle cx="345" cy="170" r="12" fill="white"/>
+                            <circle cx="297" cy="172" r="8" fill="#2d3748" class="eye-left"/>
+                            <circle cx="347" cy="172" r="8" fill="#2d3748" class="eye-right"/>
+                            
+                            <!-- Smile -->
+                            <path d="M 295 190 Q 320 200 345 190" stroke="#2d3748" stroke-width="3" stroke-linecap="round" fill="none"/>
+                            
+                            <!-- Left arm -->
+                            <rect x="220" y="220" width="40" height="80" rx="20" fill="url(#armGradient)" class="arm-left"/>
+                            <circle cx="240" cy="310" r="18" fill="#667eea"/>
+                            
+                            <!-- Right arm (holding wrench) -->
+                            <rect x="380" y="220" width="40" height="80" rx="20" fill="url(#armGradient)" class="arm-right"/>
+                            <circle cx="400" cy="310" r="18" fill="#667eea"/>
+                            
+                            <!-- Wrench -->
+                            <g transform="translate(400, 310) rotate(-30)">
+                                <rect x="-5" y="10" width="10" height="50" rx="3" fill="#94a3b8"/>
+                                <circle cx="0" cy="5" r="8" stroke="#94a3b8" stroke-width="4" fill="none"/>
+                            </g>
+                            
+                            <!-- Legs -->
+                            <rect x="275" y="340" width="35" height="50" rx="10" fill="url(#legGradient)"/>
+                            <rect x="330" y="340" width="35" height="50" rx="10" fill="url(#legGradient)"/>
+                            
+                            <!-- Feet -->
+                            <ellipse cx="292" cy="390" rx="25" ry="10" fill="#764ba2"/>
+                            <ellipse cx="347" cy="390" rx="25" ry="10" fill="#764ba2"/>
+                        </g>
+                        
+                        <!-- Floating screws and bolts -->
+                        <circle cx="450" cy="150" r="6" fill="#cbd5e0" class="float-1"/>
+                        <rect x="140" y="180" width="8" height="8" fill="#cbd5e0" class="float-2" transform="rotate(45 144 184)"/>
+                        <circle cx="480" cy="240" r="5" fill="#cbd5e0" class="float-3"/>
+                        
+                        <!-- Sparkles indicating work -->
+                        <path d="M 420 280 L 425 285 L 430 280 L 425 275 Z" fill="#f6e05e" class="sparkle-1"/>
+                        <path d="M 440 300 L 443 303 L 446 300 L 443 297 Z" fill="#f6e05e" class="sparkle-2"/>
+                        <path d="M 410 310 L 414 314 L 418 310 L 414 306 Z" fill="#f6e05e" class="sparkle-3"/>
+                        
+                        <defs>
+                            <linearGradient id="robotBodyGradient" x1="260" y1="200" x2="380" y2="340">
+                                <stop offset="0%" stop-color="#e0e7ff"/>
+                                <stop offset="100%" stop-color="#c7d2fe"/>
+                            </linearGradient>
+                            <linearGradient id="robotHeadGradient" x1="275" y1="140" x2="365" y2="210">
+                                <stop offset="0%" stop-color="#ddd6fe"/>
+                                <stop offset="100%" stop-color="#c7d2fe"/>
+                            </linearGradient>
+                            <linearGradient id="armGradient" x1="0" y1="220" x2="0" y2="300">
+                                <stop offset="0%" stop-color="#c7d2fe"/>
+                                <stop offset="100%" stop-color="#a5b4fc"/>
+                            </linearGradient>
+                            <linearGradient id="legGradient" x1="0" y1="340" x2="0" y2="390">
+                                <stop offset="0%" stop-color="#c7d2fe"/>
+                                <stop offset="100%" stop-color="#a5b4fc"/>
+                            </linearGradient>
+                            <linearGradient id="toolboxGradient" x1="150" y1="310" x2="250" y2="370">
+                                <stop offset="0%" stop-color="#f87171"/>
+                                <stop offset="100%" stop-color="#dc2626"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                
+                <h1 class="error-title">We'll Be Back Soon!</h1>
+                <p class="error-description">
+                    Our service is temporarily unavailable due to scheduled maintenance. Our robots are working hard to make things better! Please check back in a few moments.
+                </p>
+                
+                <div class="status-indicator">
+                    <div class="status-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="status-text">
+                        <strong>Status:</strong> Under Maintenance
+                    </div>
+                </div>
+                
+                <div class="error-actions">
+                    <button class="btn btn-primary" onclick="location.reload()" aria-label="Reload page and try again">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C11.8643 3 13.5503 3.73301 14.8056 4.92426" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M14 2V6H10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Try Again
+                    </button>
+                    <a href="index.html" class="btn btn-secondary">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M3 10L10 3L17 10M4 9V16C4 16.5523 4.44772 17 5 17H8V13C8 12.4477 8.44772 12 9 12H11C11.5523 12 12 12.4477 12 13V17H15C15.5523 17 16 16.5523 16 16V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Go to Homepage
+                    </a>
+                </div>
+                
+                <div class="info-box">
+                    <h3>What's happening?</h3>
+                    <ul>
+                        <li>We're performing scheduled system maintenance</li>
+                        <li>This usually takes just a few minutes</li>
+                        <li>Your data is safe and secure</li>
+                        <li>We'll be back online shortly</li>
+                    </ul>
+                </div>
+                
+                <p class="error-footer-note">
+                    If the issue persists, please contact our support team or check back later.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 ErrorPages. Built with care and attention to detail.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
